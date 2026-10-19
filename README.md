@@ -31,14 +31,14 @@ It reduces the boilerplate within config based service factories:
 ## Requirements
 
  * node: 22
- * [@chubbyts/chubbyts-dic-types][4]: ^2.3.0
+ * [@chubbyts/chubbyts-dic-types][4]: ^2.3.1
 
 ## Installation
 
 Through [NPM](https://www.npmjs.com) as [@chubbyts/chubbyts-dic-config-factory][1].
 
 ```ts
-npm i @chubbyts/chubbyts-dic-config-factory@^1.0.0
+npm i @chubbyts/chubbyts-dic-config-factory@^1.0.1
 ```
 
 ## Usage
