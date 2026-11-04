@@ -2,9 +2,9 @@ import { createContainer } from '@chubbyts/chubbyts-dic/dist/container';
 import type { ConfigFactory } from '@chubbyts/chubbyts-dic-config/dist/dic-config';
 import { createContainerByConfigFactory } from '@chubbyts/chubbyts-dic-config/dist/dic-config';
 import { describe, expect, test } from 'vitest';
-import { createAbstractFactory } from '../src/dic-config-factory';
-import type { Config } from './assets';
-import { ServiceA, ServiceB, serviceAFactory, serviceBFactory } from './assets';
+import { createAbstractFactory } from '../src/dic-config-factory.js';
+import type { Config } from './assets.js';
+import { ServiceA, ServiceB, serviceAFactory, serviceBFactory } from './assets.js';
 
 const createResolveValueFactory = (value: unknown) =>
   createAbstractFactory((container, { resolveValue }) => resolveValue(container, value));

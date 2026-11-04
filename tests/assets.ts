@@ -1,4 +1,4 @@
-import { createAbstractFactory } from '../src/dic-config-factory';
+import { createAbstractFactory } from '../src/dic-config-factory.js';
 
 export type ServiceConfig = Record<string, unknown>;
 
