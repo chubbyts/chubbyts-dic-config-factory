@@ -1,4 +1,4 @@
-import type { Container } from '@chubbyts/chubbyts-dic-types/dist/container';
+import type { Container } from '@chubbyts/chubbyts-dic-types/container';
 
 export type Factory<T = unknown> = (container: Container) => T;
 

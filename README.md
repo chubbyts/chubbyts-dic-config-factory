@@ -31,14 +31,14 @@ It reduces the boilerplate within config based service factories:
 ## Requirements
 
  * node: 22
- * [@chubbyts/chubbyts-dic-types][4]: ^2.3.1
+ * [@chubbyts/chubbyts-dic-types][4]: ^2.4.0
 
 ## Installation
 
 Through [NPM](https://www.npmjs.com) as [@chubbyts/chubbyts-dic-config-factory][1].
 
 ```ts
-npm i @chubbyts/chubbyts-dic-config-factory@^1.0.1
+npm i @chubbyts/chubbyts-dic-config-factory@^1.1.0
 ```
 
 ## Usage
@@ -46,7 +46,7 @@ npm i @chubbyts/chubbyts-dic-config-factory@^1.0.1
 ### Factory
 
 ```ts
-import { createAbstractFactory } from '@chubbyts/chubbyts-dic-config-factory/dist/dic-config-factory';
+import { createAbstractFactory } from '@chubbyts/chubbyts-dic-config-factory/dic-config-factory';
 import { ServiceA } from '../service/service-a';
 import type { Config } from '../config';
 import { serviceBFactory } from './service-b-factory';
@@ -62,7 +62,7 @@ export const serviceAFactory = createAbstractFactory((container, { resolveConfig
 ### With [@chubbyts/chubbyts-dic-config][2]
 
 ```ts
-import { createContainerByConfigFactory } from '@chubbyts/chubbyts-dic-config/dist/dic-config';
+import { createContainerByConfigFactory } from '@chubbyts/chubbyts-dic-config/dic-config';
 import type { ServiceA } from './service/service-a';
 import { serviceAFactory } from './factory/service-a-factory';
 import { serviceBFactory } from './factory/service-b-factory';
@@ -90,7 +90,7 @@ database connection. The given name resolves the related sub config (`resolveCon
 each dependency (`resolveDependency`).
 
 ```ts
-import { createContainerByConfigFactory } from '@chubbyts/chubbyts-dic-config/dist/dic-config';
+import { createContainerByConfigFactory } from '@chubbyts/chubbyts-dic-config/dic-config';
 import type { ServiceA } from './service/service-a';
 import { serviceAFactory } from './factory/service-a-factory';
 import { serviceBFactory } from './factory/service-b-factory';

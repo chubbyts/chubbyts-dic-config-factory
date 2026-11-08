@@ -1,7 +1,7 @@
 {
   "name": "@chubbyts/chubbyts-dic-config-factory",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "An abstract service factory for the dependency injection container, usable with chubbyts-dic-config, inspired by chubbyphp-laminas-config-factory.",
   "keywords": [
     "chubbyts",
@@ -38,21 +38,26 @@
     "dist"
   ],
   "exports": {
+    "./dist/*": {
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js",
+      "default": "./dist/*.js"
+    },
     "./*": {
-      "types": "./*.d.ts",
-      "import": "./*.js",
-      "default": "./*.js"
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js",
+      "default": "./dist/*.js"
     }
   },
   "engines": {
     "node": ">=22"
   },
   "dependencies": {
-    "@chubbyts/chubbyts-dic-types": "^2.3.1"
+    "@chubbyts/chubbyts-dic-types": "^2.4.0"
   },
   "devDependencies": {
-    "@chubbyts/chubbyts-dic": "^2.3.1",
-    "@chubbyts/chubbyts-dic-config": "^2.3.1",
+    "@chubbyts/chubbyts-dic": "^2.4.1",
+    "@chubbyts/chubbyts-dic-config": "^2.4.0",
     "@chubbyts/chubbyts-oxlint": "^1.0.2",
     "@stryker-mutator/core": "^10.0.0",
     "@stryker-mutator/vitest-runner": "^10.0.0",
