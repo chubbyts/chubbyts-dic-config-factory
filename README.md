@@ -38,7 +38,7 @@ It reduces the boilerplate within config based service factories:
 Through [NPM](https://www.npmjs.com) as [@chubbyts/chubbyts-dic-config-factory][1].
 
 ```ts
-npm i @chubbyts/chubbyts-dic-config-factory@^1.1.0
+npm i @chubbyts/chubbyts-dic-config-factory@^1.1.1
 ```
 
 ## Usage
